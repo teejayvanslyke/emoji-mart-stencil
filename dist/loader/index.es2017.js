@@ -1,1 +1,0 @@
-export * from '../esm/es2017/emoji-mart.define.js';

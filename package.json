@@ -10,6 +10,7 @@
     "dist/"
   ],
   "scripts": {
+    "prepare": "npm run build",
     "build": "npm run delete:dist && stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
