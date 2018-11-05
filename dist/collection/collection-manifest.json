@@ -1,0 +1,487 @@
+{
+  "components": [
+    {
+      "tag": "emart-anchors",
+      "dependencies": [],
+      "componentClass": "Anchors",
+      "componentPath": "components/anchors/anchors.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "categories",
+          "attr": "categories"
+        },
+        {
+          "name": "color",
+          "type": "Any",
+          "attr": "color"
+        },
+        {
+          "name": "i18n",
+          "type": "Any",
+          "attr": "i-1-8n"
+        },
+        {
+          "name": "onAnchorClick",
+          "type": "Any",
+          "attr": "on-anchor-click"
+        }
+      ],
+      "states": [
+        {
+          "name": "_defaultCategory"
+        },
+        {
+          "name": "_selected"
+        },
+        {
+          "name": "_SVGs"
+        }
+      ]
+    },
+    {
+      "tag": "emart-category",
+      "dependencies": [
+        "emart-emoji"
+      ],
+      "componentClass": "Category",
+      "componentPath": "components/category/category.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "categoryId",
+          "type": "Any",
+          "attr": "category-id"
+        },
+        {
+          "name": "categoryKey",
+          "type": "Any",
+          "attr": "category-key"
+        },
+        {
+          "name": "categoryLoaded",
+          "type": "Any",
+          "attr": "category-loaded"
+        },
+        {
+          "name": "custom",
+          "type": "Any",
+          "attr": "custom"
+        },
+        {
+          "name": "emojiProps",
+          "type": "Any",
+          "attr": "emoji-props"
+        },
+        {
+          "name": "emojis",
+          "type": "Any",
+          "attr": "emojis"
+        },
+        {
+          "name": "hasStickyPosition",
+          "type": "Boolean",
+          "attr": "has-sticky-position"
+        },
+        {
+          "name": "i18n",
+          "type": "Any",
+          "attr": "i-1-8n"
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "attr": "name"
+        },
+        {
+          "name": "native",
+          "type": "Boolean",
+          "attr": "native"
+        },
+        {
+          "name": "perLine",
+          "type": "Number",
+          "attr": "per-line"
+        },
+        {
+          "name": "recent",
+          "attr": "recent"
+        }
+      ],
+      "methods": [
+        {
+          "name": "forceUpdate"
+        },
+        {
+          "name": "getTop"
+        },
+        {
+          "name": "handleScroll"
+        },
+        {
+          "name": "memoizeSize"
+        },
+        {
+          "name": "updateDisplay"
+        }
+      ]
+    },
+    {
+      "tag": "emart-emoji",
+      "dependencies": [],
+      "componentClass": "Emoji",
+      "componentPath": "components/emoji/emoji.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "../node_modules/emoji-mart/css/emoji-mart.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "backgroundImageFn",
+          "type": "Any",
+          "attr": "background-image-fn"
+        },
+        {
+          "name": "emoji",
+          "type": "Any",
+          "attr": "emoji"
+        },
+        {
+          "name": "fallback",
+          "type": "Any",
+          "attr": "fallback"
+        },
+        {
+          "name": "forceSize",
+          "type": "Any",
+          "attr": "force-size"
+        },
+        {
+          "name": "html",
+          "type": "Any",
+          "attr": "html"
+        },
+        {
+          "name": "native",
+          "type": "Any",
+          "attr": "native"
+        },
+        {
+          "name": "onClick",
+          "type": "Any",
+          "attr": "on-click"
+        },
+        {
+          "name": "onLeave",
+          "type": "Any",
+          "attr": "on-leave"
+        },
+        {
+          "name": "onLoaded",
+          "type": "Any",
+          "attr": "on-loaded"
+        },
+        {
+          "name": "onOver",
+          "type": "Any",
+          "attr": "on-over"
+        },
+        {
+          "name": "set",
+          "type": "Any",
+          "attr": "set"
+        },
+        {
+          "name": "sheetSize",
+          "type": "Any",
+          "attr": "sheet-size"
+        },
+        {
+          "name": "size",
+          "type": "Number",
+          "attr": "size"
+        },
+        {
+          "name": "skin",
+          "type": "Any",
+          "attr": "skin"
+        },
+        {
+          "name": "tooltip",
+          "type": "Any",
+          "attr": "tooltip"
+        }
+      ]
+    },
+    {
+      "tag": "emart-picker",
+      "dependencies": [
+        "emart-anchors",
+        "emart-category",
+        "emart-preview",
+        "emart-search"
+      ],
+      "componentClass": "Picker",
+      "componentPath": "components/picker/picker.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "autoFocus",
+          "type": "Boolean",
+          "attr": "auto-focus"
+        },
+        {
+          "name": "backgroundImageFn",
+          "type": "Any",
+          "attr": "background-image-fn"
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "attr": "color"
+        },
+        {
+          "name": "custom",
+          "type": "Any",
+          "attr": "custom"
+        },
+        {
+          "name": "emoji",
+          "type": "String",
+          "attr": "emoji"
+        },
+        {
+          "name": "emojiSize",
+          "type": "Number",
+          "attr": "emoji-size"
+        },
+        {
+          "name": "emojisToShowFilter",
+          "type": "Any",
+          "attr": "emojis-to-show-filter"
+        },
+        {
+          "name": "emojiTooltip",
+          "type": "Any",
+          "attr": "emoji-tooltip"
+        },
+        {
+          "name": "exclude",
+          "type": "Any",
+          "attr": "exclude"
+        },
+        {
+          "name": "i18n",
+          "type": "Any",
+          "attr": "i-1-8n"
+        },
+        {
+          "name": "include",
+          "type": "Any",
+          "attr": "include"
+        },
+        {
+          "name": "native",
+          "type": "Any",
+          "attr": "native"
+        },
+        {
+          "name": "onEmojiClicked",
+          "type": "Any",
+          "attr": "on-emoji-clicked"
+        },
+        {
+          "name": "perLine",
+          "type": "Number",
+          "attr": "per-line"
+        },
+        {
+          "name": "pickerStyle",
+          "type": "Any",
+          "attr": "picker-style"
+        },
+        {
+          "name": "recent",
+          "type": "Any",
+          "attr": "recent"
+        },
+        {
+          "name": "set",
+          "type": "String",
+          "attr": "set"
+        },
+        {
+          "name": "sheetSize",
+          "type": "Any",
+          "attr": "sheet-size"
+        },
+        {
+          "name": "showAnchors",
+          "type": "Boolean",
+          "attr": "show-anchors"
+        },
+        {
+          "name": "showPreview",
+          "type": "Boolean",
+          "attr": "show-preview"
+        },
+        {
+          "name": "skin",
+          "type": "Any",
+          "attr": "skin"
+        },
+        {
+          "name": "title",
+          "type": "String",
+          "attr": "title"
+        },
+        {
+          "name": "width",
+          "type": "String",
+          "attr": "width"
+        }
+      ],
+      "states": [
+        {
+          "name": "_forceUpdate"
+        },
+        {
+          "name": "_loadedCategories"
+        },
+        {
+          "name": "EMOJI_DATASOURCE_VERSION"
+        }
+      ],
+      "methods": [
+        {
+          "name": "clearSearch"
+        },
+        {
+          "name": "resetScroll"
+        }
+      ],
+      "hostElement": {
+        "name": "host"
+      }
+    },
+    {
+      "tag": "emart-preview",
+      "dependencies": [
+        "emart-emoji"
+      ],
+      "componentClass": "Preview",
+      "componentPath": "components/preview/preview.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "emoji",
+          "type": "Any",
+          "attr": "emoji"
+        },
+        {
+          "name": "emojiProps",
+          "attr": "emoji-props"
+        },
+        {
+          "name": "idleEmoji",
+          "type": "String",
+          "attr": "idle-emoji"
+        },
+        {
+          "name": "skinsProps",
+          "attr": "skins-props"
+        },
+        {
+          "name": "title",
+          "type": "String",
+          "attr": "title"
+        }
+      ],
+      "states": [
+        {
+          "name": "EMOJI_DATASOURCE_VERSION"
+        }
+      ]
+    },
+    {
+      "tag": "emart-search",
+      "dependencies": [],
+      "componentClass": "Search",
+      "componentPath": "components/search/search.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "autoFocus",
+          "type": "Boolean",
+          "attr": "auto-focus"
+        },
+        {
+          "name": "custom",
+          "type": "Any",
+          "attr": "custom"
+        },
+        {
+          "name": "emojisToShowFilter",
+          "type": "Any",
+          "attr": "emojis-to-show-filter"
+        },
+        {
+          "name": "exclude",
+          "type": "Any",
+          "attr": "exclude"
+        },
+        {
+          "name": "i18n",
+          "type": "Any",
+          "attr": "i-1-8n"
+        },
+        {
+          "name": "include",
+          "type": "Any",
+          "attr": "include"
+        },
+        {
+          "name": "maxResults",
+          "type": "Number",
+          "attr": "max-results"
+        },
+        {
+          "name": "onSearch",
+          "type": "Any",
+          "attr": "on-search"
+        }
+      ],
+      "states": [
+        {
+          "name": "_input"
+        }
+      ],
+      "methods": [
+        {
+          "name": "clear"
+        }
+      ]
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": [
+    {
+      "components": [
+        "emart-anchors",
+        "emart-category",
+        "emart-emoji",
+        "emart-picker",
+        "emart-preview",
+        "emart-search"
+      ]
+    }
+  ]
+}

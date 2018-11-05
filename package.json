@@ -19,7 +19,7 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "0.9.5",
+    "@stencil/core": "^0.15.2",
     "emoji-mart": "2.4.2"
   },
   "devDependencies": {
@@ -27,7 +27,8 @@
     "@stencil/utils": "latest",
     "@types/jest": "^21.1.1",
     "jest": "^21.2.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "workbox-build": "3.4.1"
   },
   "repository": {
     "type": "git",

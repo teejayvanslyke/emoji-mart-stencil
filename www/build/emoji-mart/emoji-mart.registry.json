@@ -1,0 +1,39 @@
+{
+  "namespace": "EmojiMart",
+  "fsNamespace": "emoji-mart",
+  "loader": "../emoji-mart.js",
+  "core": "emoji-mart.feqflsqi.js",
+  "corePolyfilled": "emoji-mart.ijguhgsb.js",
+  "components": {
+    "emart-anchors": {
+      "bundleIds": {
+        "$": "bb8qprn2"
+      }
+    },
+    "emart-category": {
+      "bundleIds": {
+        "$": "bb8qprn2"
+      }
+    },
+    "emart-emoji": {
+      "bundleIds": {
+        "$": "bb8qprn2"
+      }
+    },
+    "emart-picker": {
+      "bundleIds": {
+        "$": "bb8qprn2"
+      }
+    },
+    "emart-preview": {
+      "bundleIds": {
+        "$": "bb8qprn2"
+      }
+    },
+    "emart-search": {
+      "bundleIds": {
+        "$": "bb8qprn2"
+      }
+    }
+  }
+}
